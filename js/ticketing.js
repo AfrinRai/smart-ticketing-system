@@ -6,6 +6,11 @@ function ticketing() {
     //showElementById('economy-class')
 }
 
+const nextButton = document.getElementById('next-button');
+nextButton.disabled = true;
+
+const applyButton = document.getElementById('apply-button');
+applyButton.disabled = true;
 
 const allBtn = document.getElementsByClassName('add-btn');
 let count = 0;
@@ -29,17 +34,15 @@ for(const btn of allBtn){
         setInnerText('total-seat', temp);
 
         // sum up total price
-        totalTk += 550;
+        totalTk += parseInt(550);
         setInnerText('total-price', totalTk);
 
         // sum up grand total price
-        grandTotal += 550;
+        grandTotal += parseInt(550);
         setInnerText('grand-total', grandTotal);
 
         // upgrading seat names
         seatUpgrading('seat-updating', event.target.innerText);
-
-
         
         // showing economy class 
         const seatName = document.getElementById("seat-updating").innerText;
@@ -65,15 +68,26 @@ for(const btn of allBtn){
         const sizing = selectedContainer.appendChild(li);
         sizing.classList.add('flex');
         sizing.classList.add('justify-around');
-        
-
-        
-       
-        console.log(selectedContainer);
 
         const hiddenClass = document.getElementById('hidden-part');
         hiddenClass.classList.add('hidden');
+
+        // enable next button
+        const inputNumber = document.getElementById("phone-number");
+        inputNumber.addEventListener('input', getInputNumber);
+        function getInputNumber() {
+            if(count >= 1 && inputNumber.value.length >0)
+            {
+                nextButton.disabled = false;
+            }
+        }
         
-    
+        // enable apply button
+        if(count ===4)
+        {
+            applyButton.disabled = false;
+        }
+        
     })
 }
+

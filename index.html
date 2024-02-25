@@ -419,17 +419,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- <div class="flex justify-around pb-4">
-                                                    <div>
-                                                        <p class="text-gray-500">C2</p>
-                                                    </div>
-                                                    <div>
-                                                        <p class="text-gray-500">Economy</p>
-                                                    </div>
-                                                    <div>
-                                                    <p class="text-gray-500">550</p>
-                                                    </div>
-                                                </div> -->
                                             <hr class="pb-4">
                                             <div class="flex justify-between px-8 pb-4">
                                                 <div>
@@ -443,7 +432,7 @@
                                                 <div class="pl-8">
                                                     <input class="py-4 pl-5 rounded-xl w-64" type="text" placeholder="Have any coupon?" name="" id="">
                                                 </div>
-                                                <div class="pr-10 absolute right-0 bottom-1"><button class="btn bg-[#4CAF50] text-white">Apply</button></div>
+                                                <div class="pr-10 absolute right-0 bottom-1"><button id="apply-button" class="btn bg-[#4CAF50] text-white">Apply</button></div>
                                             </div>
                                                 <div class="flex justify-between px-8 pb-4 pt-4">
                                                     <div>
@@ -469,7 +458,7 @@
                                                 <div class="label">
                                                 <span class="label-text inter font-semibold">Phone Number*</span>
                                                 </div>
-                                                <input type="number" placeholder="Enter your phone number" class="input  input-bordered w-full max-w-xs" />
+                                                <input id="phone-number" type="number" value="" placeholder="Enter your phone number" class="input  input-bordered w-full max-w-xs" />
                                             </label>
 
                                             <label class="form-control w-full max-w-xs pb-4">
@@ -480,7 +469,7 @@
                                             </label>
                                         </form>
                                         <div class="pl-10 pt-4">
-                                            <button onclick="ticketing()" class="btn bg-[#4CAF50] w-80 text-white">Next</button>
+                                            <button id="next-button" onclick="ticketing()" class="btn bg-[#4CAF50] w-80 text-white">Next</button>
                                         </div>
                                         <div class="flex justify-around pl-10 pt-4">
                                             <div>

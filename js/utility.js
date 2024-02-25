@@ -22,6 +22,12 @@ function economyClassUpgrading(id, value) {
     document.getElementById(id).innerText = value;
 }
 
+// function getInputNumber() {
+//     const inputNumber = document.getElementById("phone-number");
+//     const len = inputNumber.value.length;
+//     console.log(len);
+// }
+
 
 
 
