@@ -10,10 +10,16 @@ function showElementById(elementId) {
 }
 
 
-function setInnerText(id, value) {
-    
+function setInnerText(id, value) { 
     document.getElementById(id).innerText = value;
+}
 
+function seatUpgrading(id, value) {
+    document.getElementById(id).innerText = value;
+}
+
+function economyClassUpgrading(id, value) {
+    document.getElementById(id).innerText = value;
 }
 
 
