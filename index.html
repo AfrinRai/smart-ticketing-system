@@ -124,7 +124,7 @@
                                             </div>
                                         </div>
                                         <div>
-                                            <button class="btn bg-green-100 border-none text-green-500 absolute right-[10px]"><img src="images/seat-green-filled.png" alt=""> 40 Seats left</button>
+                                            <button class="btn bg-green-100 border-none text-green-500 absolute right-[10px]"><img src="images/seat-green-filled.png" alt=""> <span id="total-seat">40</span> Seats left</button>
                                         </div>
                                     </div>
                                     <div class="bg-gray-100 border-gray-100 rounded-3xl p-8">
@@ -434,21 +434,21 @@
                                                     <p class="inter font-semibold">Total Price</p>
                                                 </div>
                                                 <div>
-                                                    <p class="inter font-semibold">BDT 1100</p>
+                                                    <p class="inter font-semibold">BDT <span id="total-price">0</span></p>
                                                 </div>
                                             </div>
                                             <div class="flex relative">
                                                 <div class="pl-8">
                                                     <input class="py-4 pl-5 rounded-xl w-64" type="text" placeholder="Have any coupon?" name="" id="">
                                                 </div>
-                                                <div class="pr-10 absolute right-0 bottom-1"><button class="btn bg-green-400 text-white">Apply</button></div>
+                                                <div class="pr-10 absolute right-0 bottom-1"><button class="btn bg-[#4CAF50] text-white">Apply</button></div>
                                             </div>
                                                 <div class="flex justify-between px-8 pb-4 pt-4">
                                                     <div>
                                                         <p class="inter font-semibold">Grand Total</p>
                                                     </div>
                                                     <div>
-                                                        <p class="inter font-semibold">BDT 1100</p>
+                                                        <p class="inter font-semibold">BDT <span id="grand-total">0</span></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -467,7 +467,7 @@
                                                 <div class="label">
                                                 <span class="label-text inter font-semibold">Phone Number*</span>
                                                 </div>
-                                                <input type="text" placeholder="Enter your phone number" class="input  input-bordered w-full max-w-xs" />
+                                                <input type="number" placeholder="Enter your phone number" class="input  input-bordered w-full max-w-xs" />
                                             </label>
 
                                             <label class="form-control w-full max-w-xs pb-4">
@@ -478,7 +478,7 @@
                                             </label>
                                         </form>
                                         <div class="pl-10 pt-4">
-                                            <button onclick="ticketing()" class="btn bg-green-400 w-80 text-white">Next</button>
+                                            <button onclick="ticketing()" class="btn bg-[#4CAF50] w-80 text-white">Next</button>
                                         </div>
                                         <div class="flex justify-around pl-10 pt-4">
                                             <div>
