@@ -14,8 +14,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="">
-    <header class="mx-[133px] header-file">
+<body>
+    <header id="header-file" class="mx-[133px]">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -61,7 +61,7 @@
         </div>
     </header>
     <main>
-        <section class="main-file">
+        <section id="main-file">
             <!-- Best offers section -->
             <section>
                 <h1 class="text-black raleway text-4xl font-bold pt-28 text-center pb-11">Best offers for you</h1>
@@ -196,7 +196,7 @@
                                                 <img src="images/seat-green-filled.png" alt="">
                                             </div>
                                             <div>
-                                                <p class="text-green-500 selected-color-green pr-8">Selected</p>
+                                                <p class="text-[#4CAF50] pr-8">Selected</p>
                                             </div>
                                         </div>
                                     </div>
@@ -213,165 +213,165 @@
                                     </div>
 
                                     <!-- ticket numbers -->
-                                    <div class="buttons" onclick="getARandomTicket()">
+                                    <div id="current-ticket">
                                         <!-- seat A -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>A</p>
-                                            <div>
-                                                <button class="btn px-7">A1</button>
+                                            <div id="a1">
+                                                <button  class="add-btn btn px-7">A1</button>
                                             </div>
-                                            <div>
-                                                <button class="btn px-7">A2</button>
+                                            <div id="a2">
+                                                <button  class="add-btn btn px-7">A2</button>
                                             </div>
-                                            <div>
-                                                <button class="btn px-7">A3</button>
+                                            <div id="a3">
+                                                <button  class="add-btn btn px-7">A3</button>
                                             </div>
-                                            <div>
-                                                <button class="btn px-7">A4</button>
+                                            <div id="a4">
+                                                <button  class="add-btn btn px-7">A4</button>
                                             </div>
                                         </div>
                                         <!-- Seat B -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>B</p>
-                                            <div>
-                                                <button class="btn px-7">B1</button>
+                                            <div id="b1">
+                                                <button  class="add-btn btn px-7">B1</button>
                                             </div>
-                                            <div>
-                                                <button class="btn px-7">B2</button>
+                                            <div id="b2">
+                                                <button  class="add-btn btn px-7">B2</button>
                                             </div>
-                                            <div>
-                                                <button class="btn px-7">B3</button>
+                                            <div id="b3">
+                                                <button  class="add-btn btn px-7">B3</button>
                                             </div>
-                                            <div>
-                                                <button class="btn px-7">B4</button>
+                                            <div id="b4">
+                                                <button  class="add-btn btn px-7">B4</button>
                                             </div>
                                         </div>
                                         <!-- seat C -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>C</p>
                                             <div>
-                                                <button class="btn px-7">C1</button>
+                                                <button  id="c1" class="add-btn btn px-7">C1</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">C2</button>
+                                                <button  id="c2" class="add-btn btn px-7">C2</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">C3</button>
+                                                <button  id="c3" class="add-btn btn px-7">C3</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">C4</button>
+                                                <button  id="c4" class="add-btn btn px-7">C4</button>
                                             </div>
                                         </div>
                                         <!-- seat D -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>D</p>
                                             <div>
-                                                <button class="btn px-7">D1</button>
+                                                <button  id="d1" class="add-btn btn px-7">D1</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">D2</button>
+                                                <button  id="d2" class="add-btn btn px-7">D2</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">D3</button>
+                                                <button  id="d3" class="add-btn btn px-7">D3</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">D4</button>
+                                                <button  id="d4" class="add-btn btn px-7">D4</button>
                                             </div>
                                         </div>
                                         <!-- seat E -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>E</p>
                                             <div>
-                                                <button class="btn px-7">E1</button>
+                                                <button  id="e1" class="add-btn btn px-7">E1</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">E2</button>
+                                                <button  id="e2" class="add-btn btn px-7">E2</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">E3</button>
+                                                <button  id="e3" class="add-btn btn px-7">E3</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">E4</button>
+                                                <button  id="e4" class="add-btn btn px-7">E4</button>
                                             </div>
                                         </div>
                                         <!-- seat F -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>F</p>
                                             <div>
-                                                <button class="btn px-7">F1</button>
+                                                <button  id="f1" class="add-btn btn px-7">F1</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">F2</button>
+                                                <button  id="f2" class="add-btn btn px-7">F2</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">F3</button>
+                                                <button  id="f3" class="add-btn btn px-7">F3</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">F4</button>
+                                                <button  id="f4" class="add-btn btn px-7">F4</button>
                                             </div>
                                         </div>
                                         <!-- seat G -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>G</p>
                                             <div>
-                                                <button class="btn px-7">G1</button>
+                                                <button  id="g1" class="add-btn btn px-7">G1</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">G2</button>
+                                                <button  id="g2" class="add-btn btn px-7">G2</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">G3</button>
+                                                <button  id="g3" class="add-btn btn px-7">G3</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">G4</button>
+                                                <button  id="g4" class="add-btn btn px-7">G4</button>
                                             </div>
                                         </div>
                                         <!-- seat H -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>H</p>
                                             <div>
-                                                <button class="btn px-7">H1</button>
+                                                <button  id="h1" class="add-btn btn px-7">H1</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">H2</button>
+                                                <button  id="h2" class="add-btn btn px-7">H2</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">H3</button>
+                                                <button  id="h3" class="add-btn btn px-7">H3</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">H4</button>
+                                                <button  id="h4" class="add-btn btn px-7">H4</button>
                                             </div>
                                         </div>
                                         <!-- seat I -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>I</p>
                                             <div>
-                                                <button class="btn px-7">I1</button>
+                                                <button  id="i1" class="add-btn btn px-7">I1</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">I2</button>
+                                                <button  id="i2" class="add-btn btn px-7">I2</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">I3</button>
+                                                <button  id="i3" class="add-btn btn px-7">I3</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">I4</button>
+                                                <button  id="i4" class="add-btn btn px-7">I4</button>
                                             </div>
                                         </div>
                                         <!-- seat J -->
                                         <div class="flex justify-around items-center pb-6">
                                             <p>J</p>
                                             <div>
-                                                <button class="btn px-7">J1</button>
+                                                <button  id="j1" class="add-btn btn px-7">J1</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">J2</button>
+                                                <button  id="j2" class="add-btn btn px-7">J2</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">J3</button>
+                                                <button  id="j3" class="add-btn btn px-7">J3</button>
                                             </div>
                                             <div>
-                                                <button class="btn px-7">J4</button>
+                                                <button  id="j4" class="add-btn btn px-7">J4</button>
                                             </div>
                                         </div>
                                     </div>
@@ -398,7 +398,7 @@
                                             <div class="border-none bg-gray-100 w-[320px] rounded-xl">
                                                 <div class="flex justify-around pb-4">
                                                     <div>
-                                                        <p class="pt-3 inter font-semibold">Seat <button class="btn bg-green-400 text-white">2</button></p>
+                                                        <p class="pt-3 inter font-semibold">Seat <button id="selected-seat" class="btn bg-[#4CAF50] text-white">0</button></p>
                                                     </div>
                                                     <div>
                                                         <p class="pt-5 inter font-semibold">Class</p>
@@ -478,7 +478,7 @@
                                             </label>
                                         </form>
                                         <div class="pl-10 pt-4">
-                                            <button class="btn bg-green-400 w-80 text-white">Next</button>
+                                            <button onclick="ticketing()" class="btn bg-green-400 w-80 text-white">Next</button>
                                         </div>
                                         <div class="flex justify-around pl-10 pt-4">
                                             <div>
@@ -500,7 +500,7 @@
         </section>
     
             <!-- Success part -->
-        <section class="success-part hidden">
+        <section id="success-part" class="hidden">
             <div class="border-none mx-w-3/12 bg-white flex flex-col justify-center items-center text-center pt-20">
                 <img src="images/success.png" alt="">
                 <h1 class="py-5 text-green-700 font-seibold text-3xl">SUCCESS</h1>
@@ -514,7 +514,8 @@
     <footer>
         
     </footer>
-    <script src="js/ticketing.js"></script>
+    
     <script src="js/utility.js"></script>
+    <script src="js/ticketing.js"></script>
 </body>
 </html>
