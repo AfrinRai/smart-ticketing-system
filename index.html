@@ -428,11 +428,15 @@
                                                     <p class="inter font-semibold">BDT <span id="total-price">0</span></p>
                                                 </div>
                                             </div>
-                                            <div class="flex relative">
+                                            
+                                            <div id="inputField" class="flex relative">
                                                 <div class="pl-8">
-                                                    <input class="py-4 pl-5 rounded-xl w-64" type="text" placeholder="Have any coupon?" name="" id="">
+                                                    <input id="coupon" class="py-4 pl-5 rounded-xl w-64" type="text" placeholder="Have any coupon?" name="" id="">
                                                 </div>
-                                                <div class="pr-10 absolute right-0 bottom-1"><button id="apply-button" class="btn bg-[#4CAF50] text-white">Apply</button></div>
+                                                <div class="pr-10 absolute right-0 bottom-1"><button onclick="hidingInputField()" id="apply-button" class="btn bg-[#4CAF50] text-white">Apply</button></div>
+                                            </div>
+                                            <div id="discount-msg" class="hidden">
+                                                <p class="pl-3">Congratulations! You've got the discount.</p>
                                             </div>
                                                 <div class="flex justify-between px-8 pb-4 pt-4">
                                                     <div>
@@ -491,16 +495,16 @@
         </section>
     
             <!-- Success part -->
-        <section id="success-part" class="hidden">
-            <div class="border-none mx-w-3/12 bg-white flex flex-col justify-center items-center text-center pt-20">
+        <dialog id="success-part" class="">
+            <div class="border-none mx-w-3/12 bg-white flex flex-col justify-center items-center text-center">
                 <img src="images/success.png" alt="">
                 <h1 class="py-5 text-green-700 font-seibold text-3xl">SUCCESS</h1>
-                <h3 class="font-seibold text-2xl">Thank you for Booking Our Bus Seats.</h3>
-                <h3 class="font-seibold text-2xl pb-5">We are working hard to find the best service and deals for you.</h3>
+                <h3 class="font-seibold text-xl px-2">Thank you for Booking Our Bus Seats.</h3>
+                <h3 class="font-seibold text-xl pb-5 px-2">We are working hard to find the best service and deals for you.</h3>
                 <p class="pb-5">Shortly you will find a confirmation in your email.</p>
                 <button class="btn text-white bg-green-600 rounded-3xl px-20">Continue</button>
             </div>
-        </section>
+        </dialog>
     </main>
     <footer>
         
